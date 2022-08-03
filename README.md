@@ -5,13 +5,13 @@
 
 | ID  | Scenarios     | Test cases | Priority |
 | --- | ------------- | ---------- | -------- |
-| 1   | Validate if the app can be dowloaded and function correctly  | <ul><li>item1</li><li>item2</li></ul>    | yy       |
-| 2   | Validate if all lists, links, buttons are clickable and functioning correctly | <ul><li>Check add expence and add income buttons</li><liCheck Side menu is clickable</li></ul>  | yy       |
-| 3   | Validate if the user can Add/Edit/View/Remove expences when entering valid input| <ul><li>Check if the user can add an expense when entering the value and category</li><li>item2</li></ul>     | yy       |
+| 1   | Validate if all lists, links, buttons/icons are clickable and routing correctly | <ul><li>Check add expence and add income buttons are clickable</li><li>Check side menu and all included items are clickable</li><li>Check the expenses/incomes list views are clickable</li><li>Check the filter menu and all included items are clickable</li><li>Check the "new transfer" icon is clickable</li></ul>  | yy       |
+| 2   | Validate if the user can Add expences when entering valid input| <ul><li>Check that user can add an expense when entering valid value and category</li><li>Check that user can add an expense after making an arithmatic operation to generate the value</li><li>Check that user can add an expense using a newly created category(in the same flow)</li></ul>  | yy       |
 | 3   | Validate if the user can not Add expences when adding empty/invalid input | <ul><li>Check the app won't save the expense if the value is empty</li><li>Check the app won't save the expense if the value is invalid(0,.,negative number)</li><li>Check the app won't save the expense if the category is not selected</li><li>Check the app won't save the expense if the user deleted the value after moving to screen of choosing the category</li></ul>     | yy       |
-| 4   | Validate if the user can Add/Edit/View/Remove income       | xx         | yy       |
-| 5   | Validate if the user can add a category for an expense/income  | <li>Check if the user can add an expense from the side menu</li><li>Check if the user can add an income from the side menu</li><li>Check if the user can add an expense from the bottom icon (-)</li> <li>Check if the user can add an income from the bottom icon(+)</li></ul>        | yy       |
-| 6   | Validate if the app secure the data view when adding a password protection  | <li>Check if the user added a valid password, it passes</li><li>Check if user added incorrect password, it does not pass</li><li>Check if added incomplete/empty password, it does not pass</li> <li>Check when removing password protection, password is not required</li></ul>  | yy       |
+| 4   | Validate if the user can filter the saved input using all filters   | <ul><li>Check user can filter results using "Day"</li><li>Check user can filter results using "Week"</li><li>Check user can filter results using "Month"</li><li>Check user can filter results using "Year"</li><li>Check user can filter results using "All"</li><li>Check user can filter results using "Interval" by choosing the suggested interval</li><li>Check user can filter results using "Interval" by selecting a custom interval</li><li>Check user can filter results using "Choose date"</li></ul>  | yy       |
+| 5   | Validate if the user can add a category for an expense/income  | <li>Check if the user can add an expense category from the side menu</li><li>Check if the user can add an income category from the side menu</li><li>Check if the user can add an expense category from the bottom icon (-)</li> <li>Check if the user can add an income category from the bottom icon(+)</li></ul>  | yy       |
+| 7   | Validate if the app calculate the balance correctly | <li>Check the balance is displayed in green if it's a positive balance</li><li>Check the balance is displayed in red if it's a negative balance</li><li>Check when adding the expenses more than the incomes, it's a negative balance</li><li>Check when adding incomes more than the expenses, it's a positive balance</li> <li>Check when adding expenses only, it's a negative balance</li><li>Check when adding incomes only, it's a positive balance</li></ul>  | yy       |
+| 6   | Validate if the app requires a password when adding a password protection in order to view the data  | <li>Check if the user added a valid password, it passes</li><li>Check if user added incorrect password, it does not pass</li><li>Check if added incomplete/empty password, it does not pass</li> <li>Check when removing password protection, password is not required</li></ul>  | yy       |
 | 7   | Validate if the user can search for an expense/income | <ul><li>Check if search suggests words that matches typed keywords</li><li>Check if search displays no results when entering invalid/empty search input</li><li>Check if search results are cleared after removing the search input</li></ul> | yy       |
 | 8   | Validate if the app is functioning on different operating systems | <ul><li>Check app's behavior on IOS OS</li><li>Check app's behavior on Android OS </li></ul>  | yy       |
 | 9   | Validate if the app is compaitable with different screen orientations  | <ul><li>Check app's landscape view</li><li>Check app's portrait view</li><li>Check app's behavior when the network is off</li></ul>  | yy       |
@@ -213,6 +213,35 @@ Low
 Low
 - Impact:
 Medium, impact on compitability
+
+### Bug #8
+
+- Title: When filtering using "Date", a future dates can be added
+
+- Steps to Reproduce:
+  - Open Monefy mobile application
+  - Navigate to the filter list
+  - Select "Choose Day"
+  - Select a future date 
+  - Click on "ok"
+
+- Expected Results:
+App should reject future dates
+- Actual Results:
+App accepts future dates
+- Affected Devices:
+IOS
+- Network:
+4G
+- Severity:
+Low
+- Priority:
+Low
+- Impact:
+Low, impact on reliability
+- Attachments
+<img src="https://user-images.githubusercontent.com/46287387/182503805-c65b22f3-38c6-4c24-9984-4e81fd834c35.jpg" height="600" width="300" >
+<img src="https://user-images.githubusercontent.com/46287387/182503858-d97c5142-7051-4829-9397-e6e3dd473680.jpg" height="600" width="300" >
 
 
 ## Test Automation
