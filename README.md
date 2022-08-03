@@ -6,15 +6,17 @@
 | ID  | Scenarios     | Test cases | Priority |
 | --- | ------------- | ---------- | -------- |
 | 1   | Validate if the app can be dowloaded and function correctly  | <ul><li>item1</li><li>item2</li></ul>    | yy       |
-| 2   | Validate if all lists, links, buttons are clickable and functioning correctly | xx         | yy       |
-| 3   | Validate if the user can Add/Edit/View/Remove expences | xx         | yy       |
+| 2   | Validate if all lists, links, buttons are clickable and functioning correctly | <ul><li>Check add expence and add income buttons</li><liCheck Side menu is clickable</li></ul>  | yy       |
+| 3   | Validate if the user can Add/Edit/View/Remove expences when entering valid input| <ul><li>Check if the user can add an expense when entering the value and category</li><li>item2</li></ul>     | yy       |
+| 3   | Validate if the user can not Add expences when adding empty/invalid input | <ul><li>Check the app won't save the expense if the value is empty</li><li>Check the app won't save the expense if the value is invalid(0,.,negative number)</li><li>Check the app won't save the expense if the category is not selected</li><li>Check the app won't save the expense if the user deleted the value after moving to screen of choosing the category</li></ul>     | yy       |
 | 4   | Validate if the user can Add/Edit/View/Remove income       | xx         | yy       |
-| 5   | Validate if the user can add a category for an expense/income  | xx         | yy       |
-| 6   | Validate if the app secure the data view when adding a password protection  | xx         | yy       |
-| 7   | Validate if the user can search for an expense/income | <ul><li>Check if search suggests words that matches typed keywords</li><li>Check if search displays no results when entering invalid/empty search input</li><li>Check if search results are cleared after removing the search input</li></ul>         | yy       |
-| 8   | Validate if the app is functioning on different operating systems       | <ul><li>Check app's behavior on IOS OS</li><li>Check app's behavior on Android OS </li></ul>         | yy       |
-| 9   | Validate if the app is compaitable with different screen orientations  | <ul><li>Check app's landscape view</li><li>Check app's portrait view</li><li>Check app's behavior when the network is off</li></ul>         | yy       |
-| 10  | Validate the app’s behavior in different network levels   | <ul><li>Check app's behavior using a strong network</li><li>Check app's behavior using weak network</li><li>Check app's behavior when the network is off</li></ul>         | yy       |
+| 5   | Validate if the user can add a category for an expense/income  | <li>Check if the user can add an expense from the side menu</li><li>Check if the user can add an income from the side menu</li><li>Check if the user can add an expense from the bottom icon (-)</li> <li>Check if the user can add an income from the bottom icon(+)</li></ul>        | yy       |
+| 6   | Validate if the app secure the data view when adding a password protection  | <li>Check if the user added a valid password, it passes</li><li>Check if user added incorrect password, it does not pass</li><li>Check if added incomplete/empty password, it does not pass</li> <li>Check when removing password protection, password is not required</li></ul>  | yy       |
+| 7   | Validate if the user can search for an expense/income | <ul><li>Check if search suggests words that matches typed keywords</li><li>Check if search displays no results when entering invalid/empty search input</li><li>Check if search results are cleared after removing the search input</li></ul> | yy       |
+| 8   | Validate if the app is functioning on different operating systems | <ul><li>Check app's behavior on IOS OS</li><li>Check app's behavior on Android OS </li></ul>  | yy       |
+| 9   | Validate if the app is compaitable with different screen orientations  | <ul><li>Check app's landscape view</li><li>Check app's portrait view</li><li>Check app's behavior when the network is off</li></ul>  | yy       |
+| 10  | Validate the app’s behavior in different network levels   | <ul><li>Check app's behavior using a strong network</li><li>Check app's behavior using weak network</li><li>Check app's behavior when the network is disconnected</li></ul> | yy       |
+
 
 ## Bug Reporting
 
