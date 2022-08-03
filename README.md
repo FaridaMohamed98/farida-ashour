@@ -3,8 +3,20 @@
 
 ## Test Design
 
-## Bug Reporting
+| ID  | Scenarios     | Test cases | Priority |
+| --- | ------------- | ---------- | -------- |
+| 1   | Verify all lists, links, buttons are clickable  | <ul><li>item1</li><li>item2</li></ul>    | yy       |
+| 2   | Content Cell  | xx         | yy       |
+| 3   | Second Header | xx         | yy       |
+| 4   | content       | xx         | yy       |
+| 5   | Content Cell  | xx         | yy       |
+| 6   | Content Cell  | xx         | yy       |
+| 7   | Second Header | xx         | yy       |
+| 8   | content       | xx         | yy       |
+| 9   | Content Cell  | xx         | yy       |
+| 10  | Content Cell  | xx         | yy       |
 
+## Bug Reporting
 
 ### Bug #1
 
@@ -199,3 +211,19 @@ Low
 Low
 - Impact:
 Medium, impact on compitability
+
+
+## Test Automation
+
+### Test cases needed for the search functionality
+
+- Verify the search field and search icon are displayed (UI)
+- Verify search results displayed are relevant to search keyword by adding valid search input (multiple test with different inputs)
+- Verify search works by pressing the Enter key from the keyboard
+- Verify search works by clicking on the search button
+- Verify an error message display by entering invalid search input
+- Verify search does not accept blank input
+- Verify search suggests words that matches typed keywords (auto suggestion)
+- Verify search results are cleared on clicking clear search button
+- Verify total number of search records/results are displayed on page
+
